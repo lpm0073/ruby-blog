@@ -12,7 +12,11 @@ class Post < ApplicationRecord
   end
   
   def display_day_published
-  	published_at.strftime('%-b %-d %Y')
+    if published_at.present? 
+      published_at.strftime('%-b %-d %Y')
+    else
+      "Not yet published."
+    end
   end
 
   def publish

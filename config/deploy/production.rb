@@ -1,3 +1,4 @@
+set :stage, :production
 server 'blog.lawrencemcdaniel.com', user: 'deploy', roles: %w{app db web}
 
 # server-based syntax

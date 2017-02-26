@@ -20,20 +20,5 @@ user:		deploy
 password:	Cf38+62>uwR@}/8V
 database:	ruby-blog
 
-createdb -O deploy ruby-blog
 
-
-
-/home/deploy/ruby-blog/shared/config/database.yml
-production:
-  adapter: postgresql
-  host: 127.0.0.1
-  database: ruby-blog
-  username: deploy
-  password: Cf38+62>uwR@}/8V
-  encoding: unicode
-  pool: 5
-
-/home/deploy/ruby-blog/shared/config/secrets.yml
-
-a29750c96aa978f7ba0f6c43fb52d19e09aec64986cae74ce93107ee1e716d57fe577d19b8e9daaba2cb68d3994c4baba4395197ab37ce954862c8fe6273af0f
+insert into authors (name, email, created_at, updated_at)  values('Lawrence McDaniel', 'lpm0073@gmail.com', clock_timestamp(), clock_timestamp());

@@ -1,3 +1,4 @@
+
 <div class="collapse" id="exCollapsingNavbar">
   <div class="collapse-bg p-a-1">
     <div class='card'>
@@ -29,10 +30,10 @@
   </div>
 </div>
 
-<nav class="navbar navbar-light bg-faded">
+<nav class="navbar navbar-default bg-faded">
   <div class='container'>
     <a class='navbar-brand' href='/'>
-      lawrence<span class='light'>mcdaniel</span>
+      <span class='fat-text'>lawrence</span><span class='light'>mcdaniel</span>
     </a>
     <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
     </button>
@@ -50,11 +51,11 @@
         <li class="nav-item">
             <%= link_to 'My Posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
         </li>
-        <li class="list-group-item">
+        <li class="nav-item">
             <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
         </li>
         <% else %>
-          <li class="list-group-item">
+          <li class="nav-item">
             <%= link_to 'Sign In', authors_posts_path, class: "nav-link #{yield(:author)}" %>
           </li>
       <% end %>

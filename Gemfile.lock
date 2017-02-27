@@ -47,9 +47,9 @@ GEM
     autoprefixer-rails (6.7.5)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha6)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     capistrano (3.7.2)
@@ -203,7 +203,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap-sass (~> 3.3.6)
   byebug
   capistrano (~> 3.7, >= 3.7.1)
   capistrano-rails (~> 1.2)

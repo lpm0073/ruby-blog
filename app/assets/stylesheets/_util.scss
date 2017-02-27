@@ -1,6 +1,10 @@
 .thin-text { 
 	font-weight: 300; 
 }
+.fat-text { 
+  font-weight: 900; 
+  font-size: 32px;
+}
 
 .apple_pagination {
   background: #f1f1f1;
@@ -29,3 +33,6 @@
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+
+
+      

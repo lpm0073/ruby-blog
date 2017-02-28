@@ -2,10 +2,12 @@
 <% provide(:blog_active, 'active') %>
 
 
+<div class="application_frame">
 <div class="row">
   <% @posts.each do |post| %>
     <%= render post %>
   <% end %>
+</div>
 </div>
 <div class="apple_pagination">
 	<%= will_paginate @posts, container: false %>
